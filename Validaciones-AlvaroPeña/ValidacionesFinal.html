@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Álvaro"/>
+		<style type="text/css">
+			body{
+                background-color: blue;
+                color: white;
+            }
+		</style>
+        <title>Validaciones</title>
+        <script src="./JavaScript/validaciones.js"></script>
+	</head>
+	<body>
+		<header>
+		
+		</header>
+		<nav>
+		
+		</nav>
+		<main>
+			<section>
+				<article>
+					<div>
+						<h1>Formulario de recogida de datos de la empresa</h1>
+                        <form>
+                            <label for="razonSocial">Razon Social/Apellidos y Nombre</label>
+                            <input type="text" name="razonSocial">
+                            <br>
+                            <label for="codEmpresa">Código de la Empresa</label>
+                            <input type="text" name="codEmpresa">
+                            <br>
+                            <label for="cif-nif">CIF/NIF de la empresa</label>
+                            <input type="text" name="cif-nif">
+                            <br>
+                            <br>
+                            <fieldset style="width: 10%;">
+                                <legend>Tipo de persona</legend>
+                                <input type="radio" name="persona">Juridica
+                                <input type="radio" name="persona">Física
+                            </fieldset>
+                            <br>
+                            <fieldset style="width: 40%;">
+                                <legend>Domicilio Social/Particular</legend>
+                                <label for="direccion">Direccion</label>
+                                <input type="text" name="direccion">
+                                <label for="telf">Teléfono</label>
+                                <input type="number" name="telf">
+                                <br>
+                                <label for="local">Localidad</label>
+                                <input type="text" name="localidad">
+                                <label for="codPostal">Código Postal</label>
+                                <input type="number" name="codPostal">
+                                <br>
+                                <label for="provincia">Provincia</label>
+                                <input type="text" name="provincia"><br>
+                                <label for="fax">Fax</label>
+                                <input type="text" name="fax">
+                            </fieldset>
+                            <br>
+                            <fieldset style="width: 40%;">
+                                <legend>Datos Bancarios</legend>
+                                <label for="cod_banco">Código del banco</label>
+                                <input type="text" name="cod_banco">
+                                <br>
+                                <label for="numOfi">Numero oficina</label>
+                                <input type="text" name="numOfi">
+                                <br>
+                                <label for="codControl">Código control</label>
+                                <input type="text" name="codControl">
+                                <br>
+                                <label for="numCuenta">Numero de cuenta</label>
+                                <input type="number" name="numCuenta">
+                                <br>
+                                <label for="iban">IBAN</label>
+                                <input type="number" name="iban">
+                            </fieldset>
+                            <br>
+                            <label for="fecha">Fecha de Constitucion de la Empresa</label>
+                            <input type="date" name="fecha">
+                            <br>
+                            <label for="trabajadores">Número de Trabajadores de la Empresa</label>
+                            <input type="number" name="trabajadores">
+                            <br>
+                            <label for="fabricas">Número de Faábricas de la Empresa</label>
+                            <input type="number" name="fabricas">
+                            <br>
+                            <label for="comunidades">Comunidades en las que hay fabricas</label>
+                            <select id="comunidad">
+                                <option value="Andalucía">Andalucía</option>
+                                <option value="Aragón">Aragón</option>
+                                <option value="Asturias">Asturias</option>
+                                <option value="Canarias">Canarias</option>
+                                <option value="Cantabria">Cantabria</option>
+                                <option value="Castilla-La Mancha">Castilla-La Mancha</option>
+                                <option value="Castilla y León">Castilla y León</option>
+                                <option value="Cataluña">Cataluña</option>
+                                <option value="Extremadura">Extremadura</option>
+                                <option value="Galicia">Galicia</option>
+                                <option value="Islas Baleares">Islas Baleares</option>
+                                <option value="La Rioja">La Rioja</option>
+                                <option value="Madrid">Madrid</option>
+                                <option value="Murcia">Murcia</option>
+                                <option value="Navarra">Navarra</option>
+                                <option value="País Vasco">País Vasco</option>
+                                <option value="Valencia">Valencia</option>
+                              </select>
+                            <br>
+                            <br>
+                            <fieldset>
+                                <legend>Sector/es Económicos</legend>
+                                <input type="checkbox" name="alimentacion">Alimentacion
+                                <input type="checkbox" name="informatica">Informática
+                                <input type="checkbox" name="comercio">Comercio
+                                <input type="checkbox" name="construccion">Construcción
+                                <input type="checkbox" name="hosteleria">Hostelería
+                                <input type="checkbox" name="alimentacion1">Alimentación
+                                <input type="checkbox" name="alimentacion2">Alimentación
+                                <input type="checkbox" name="automocion">Automoción
+                                <input type="checkbox" name="calzado">Calzado
+                                <input type="checkbox" name="turismo">Turismo
+                                <input type="checkbox" name="agricultura">Agricultura
+                                <input type="checkbox" name="ganaderia">Ganadería
+                                <input type="checkbox" name="otros">Otros
+                            </fieldset>
+                            <br>
+                            <fieldset style="width: 40%;">
+                                <legend>Tipo de Empresa</legend>
+                                <input type="radio" name="empresa">S.A.
+                                <input type="radio" name="empresa">S.I.
+                                <input type="radio" name="empresa">S.A.I.
+                                <input type="radio" name="empresa">Cooperativa
+                                <input type="radio" name="empresa">Autónomo
+                                <input type="radio" name="empresa">Otra
+                            </fieldset>
+                            <br>
+                            <input type="submit" name="validar" value="Validar">
+                            <input type="reset" name="limpiar" value="Limpiar">
+                        </form>
+					</div>
+				</article>
+			</section>
+		</main>
+		<footer>
+		
+		</footer>
+		<aside>
+		</aside>
+	</body>
+</html>
